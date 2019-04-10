@@ -1,7 +1,7 @@
 // run your proxy server on port 80
 const proxy = require('redbird')({port: 80})
 // if someone visits ur ip address directly, reroute to the server running on 8000
-proxy.register("138.197.71.93", "http://localhost:8000")
+proxy.register("138.197.71.93", "http://localhost:8002")
 // if someone visits pizza.com also reroute that to port 8000
 proxy.register("ilai.link", "http://localhost:8000")
 // also helps to match the www subdomain as well
